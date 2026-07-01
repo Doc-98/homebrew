@@ -1,0 +1,194 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MehirsFranticNotes",
+				"abbreviation": "MFN",
+				"full": "Mehir's Frantic Notes",
+				"version": "1.0",
+				"authors": [
+					"Doc98"
+				],
+				"convertedBy": [
+					"Doc98"
+				],
+				"color": "7300ff",
+				"colorNight": "3a0061"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Enhanced Shadow Mastiff",
+			"source": "MehirsFranicNotes",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				14,
+				{
+					"ac": 16,
+					"condition": "when in dim light or darkness",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 14,
+			"int": 8,
+			"wis": 12,
+			"cha": 7,
+			"senses": [
+				"darkvision 90 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Ethereal Awareness",
+					"entries": [
+						"The shadow mastiff can see ethereal creatures and objects."
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in bright light created by sunlight, the shadow mastiff has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Enhanced Shadow Mastiff makes one Bite attack and one Claw attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shadow Blend",
+					"entries": [
+						"While in dim light or darkness, the shadow mastiff becomes {@condition invisible}, along with anything it is wearing or carrying. The invisibility lasts until the shadow mastiff uses a bonus action to end it or until the shadow mastiff attacks, is in bright light, or is {@condition incapacitated}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://2014.5e.tools/audio/bestiary/shadow-mastiff.opus"
+			},
+			"senseTags": [
+				"D",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "Shadow Mastiff Alpha",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"entries": [
+							"Shunning sunlight, these hounds are usually met as a pack. Some faiths devoted to deities of gloom and night, such as that of Shar in the Forgotten Realms, perform unholy rites to summon shadow mastiffs to work as temple sentinels and bodyguards.",
+							"After surviving terrible experiments that try to infuse vampiric powers in these creatures, the enhanced specimens become stronger and more dangerous, but also gain new vulnerabilities."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Shadow Mastiffs",
+						"entries": [
+							"Shadow mastiffs—hounds of the Shadowfell—move invisibly through the shadows, always on the hunt."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Shadow Mastiffs Alpha",
+						"entries": [
+							"Each pack of shadow mastiffs is led by an alpha, the smartest one of the group. The sound of an alpha's howl strikes terror into those who hear it and is a sure sign that a pack is on the prowl."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://files.d20.io/images/490969468/UJjeaSlzNCZCwsvgnQGt8Q/med.png?1781725461"
+						}
+					}
+				]
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"save": {
+				"dex": "+5",
+				"str": "+7"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"immune": [
+				"cold",
+				"necrotic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"grappled",
+				"restrained"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		}
+	]
+}
